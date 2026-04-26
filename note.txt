@@ -1,0 +1,2 @@
+# Every file in a Node application is considered as a Module. ** e.g. app.js **
+# Variable and Function defined in that file are a scope to that Module. They are not available outside that Module.
