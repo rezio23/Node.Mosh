@@ -1,22 +1,19 @@
-//(function (exports, require, module, __filename, __dirname) { // Module wrapper function (Unnecessary)
+// Node internally wraps each file in a function like:
+// (function (exports, require, module, __filename, __dirname) { ... })
 
-console.log(__filename); // Check file name
-console.log(__dirname); // Check dir name
+console.log(__filename); // Absolute path to this file
+console.log(__dirname); // Absolute path to this folder
 
-let url = "http://mylogger.io/log";
+const url = 'http://mylogger.io/log';
 
 function log(message) {
-  // Send HTTP request to the url
-    console.log(message);
+  // In a real app, this is where you could send an HTTP request to `url`.
+  console.log(message);
 }
 
-// Make the function public
+// Export the function directly so consumers can call: logger('hello')
+module.exports = log;
 
-// module.exports.method = function;
+// Alternative export style:
 // module.exports.log = log;
-module.exports = log; // Short for a single function
-// exports.log = log; // Other side
-
-// module.exports.endPoint = url; // Use other word beside url
-
-// })
+// module.exports.endPoint = url;

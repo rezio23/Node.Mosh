@@ -1,10 +1,9 @@
-let _ = require('underscore'); // underscore is a module
-// When we require a function, it supply the module as a core module
+const _ = require('underscore');
+// `underscore` is a third-party npm package (not a Node core module).
+// In `require()`:
+// - `./` or `../` loads a local file/folder.
+// - A bare name like `underscore` loads from `node_modules`.
 
-// Core module or File or Folder ?
-// in the require method, if we use ./ or ../, it will be a file or a folder.
-// In this case, it was a Core Module
-
-// Now use Underscore
-let result = _.contains([1, 3, 5], 2); // It check if the array contained 2 or not
+// Use underscore to check whether an array contains a value.
+const result = _.contains([1, 3, 5], 2);
 console.log(result);

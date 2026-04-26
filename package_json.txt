@@ -1,24 +1,25 @@
-npm init
-This utility will walk you through creating a package.json file.
-It only covers the most common items, and tries to guess sensible defaults.
+package.json Quick Notes
+========================
 
-See `npm help init` for definitive documentation on these fields and exactly what they do.
+Create package.json
+-------------------
+Run:
+`npm init`
 
-Use `npm install <pkg>` afterwards to install a package and save it as a dependency in the package.json file.
+This command asks a few questions and creates a `package.json` file.
 
-Press ^C at any time to quit.
-package name: (nodepackage) 
-version: (1.0.0) 
-description: 
-entry point: (index.js) 
-test command: 
-git repository: 
-keywords: 
-author: 
-license: (ISC) 
-type: (commonjs) 
-About to write to dir\package.json:
+Common fields
+-------------
+- `name`: package/project name
+- `version`: project version (for example `1.0.0`)
+- `description`: short project summary
+- `main`: entry file (for example `index.js`)
+- `scripts`: reusable commands (for example `npm test`)
+- `license`: project license (for example `ISC`)
+- `type`: module system (`commonjs` or `module`)
 
+Example output
+--------------
 {
   "name": "nodepackage",
   "version": "1.0.0",
@@ -32,5 +33,7 @@ About to write to dir\package.json:
   "type": "commonjs"
 }
 
-
-Is this OK? (yes)
+After setup
+-----------
+Install dependencies with:
+`npm install <package-name>`

@@ -1,6 +1,8 @@
-const logger = require('./logger.js'); // Import logger.js
-// Use const instead of let for import to avoid error later
+const logger = require('./logger');
+// Import the function exported by logger.js.
 
-// The word hello turned to the message in the log function in logger.js
-// logger.log('hello'); 
-logger('hello'); // Short for a single function
+// Call the exported logger function.
+logger('hello');
+
+// If logger.js exported an object instead, usage would be:
+// logger.log('hello');

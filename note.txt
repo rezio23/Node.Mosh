@@ -1,2 +1,20 @@
-# Every file in a Node application is considered as a Module. ** e.g. app.js **
-# Variable and Function defined in that file are a scope to that Module. They are not available outside that Module.
+Node Module Notes
+=================
+
+1. Every file in a Node.js app is a module.
+   Example: `app.js`, `logger.js`
+
+2. Variables and functions declared in one file are scoped to that file.
+   They are not available in other files by default.
+
+3. To share code between files:
+   - Export from one module.
+   - Import/require it in another module.
+
+Example
+-------
+In `logger.js`:
+`module.exports = log;`
+
+In `app.js`:
+`const log = require('./logger');`

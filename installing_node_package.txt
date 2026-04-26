@@ -1,7 +1,22 @@
-# Package Dependency
-# Keywords : npm i dependencyName
+Node Package Dependency Notes
+=============================
 
-** 1. Underscore **
+Command format
+--------------
+npm install <dependency-name>
 
+Example
+-------
+npm install underscore
 
-We will see all of it in the dependency in the package.json file
+What happens after install
+--------------------------
+1. `node_modules/` is created (or updated).
+2. `package.json` gets a new entry in `dependencies`.
+3. `package-lock.json` is created or updated to lock exact versions.
+
+Verify install
+--------------
+1. Open `package.json` and confirm `underscore` is listed.
+2. Run your Node file:
+   `node index.js`
