@@ -1,0 +1,36 @@
+1. Install Specific Version
+=====
+npm dependencies_name@x.x.x
+
+
+
+2. Check Outdated Version
+=====
+npm Outdated
+
+
+
+3. Update Patch and Minor Version
+=====
+npm update
+
+
+
+4. Update to the latest Version
+=====
+npm i -g npm-check-update
+npm-check-update
+ncu -u
+npm i
+
+
+
+5. Check if all dependencies match the latest version
+=====
+ncu
+
+
+
+6. Uninstall Dependencies
+=====
+npm un dependencies_name

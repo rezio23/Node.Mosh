@@ -18,3 +18,25 @@ In `logger.js`:
 
 In `app.js`:
 `const log = require('./logger');`
+
+
+Listing All Dependencies
+=================
+1. npm list or npm list --depth=0
+
+
+
+View Registry Info for a Dependencies Package
+=================
+1. npm view dependencies_name or npm view dependencies_name dependencies
+
+
+
+JsHint
+=====
+- A static analyze tool for JS code that look for potential problem or syntax error.
+- It was devDependencies
+
+Install
+===
+npm i jshint --save-dev
