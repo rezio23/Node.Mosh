@@ -10,6 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "mongoose": "^9.5.0",
     "underscore": "^1.13.8"
   }
 }

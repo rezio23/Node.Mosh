@@ -1,0 +1,20 @@
+Semantic Versioning (SemVer)
+
+Format: MAJOR.MINOR.PATCH (e.g., 9.5.0)
+
+- MAJOR: Breaking API changes
+  - Increment when you make incompatible API changes
+  - Example: 9.x.x → 10.x.x
+
+- MINOR: New backward-compatible features
+  - Increment when you add functionality in a backward-compatible manner
+  - Example: x.5.x → x.6.x
+
+- PATCH: Backward-compatible bug fixes
+  - Increment when you make backward-compatible bug fixes
+  - Example: x.x.0 → x.x.1
+
+Version Number: 9.5.0
+- 9 = Major version
+- 5 = Minor version
+- 0 = Patch version
