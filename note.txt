@@ -40,3 +40,9 @@ JsHint
 Install
 ===
 npm i jshint --save-dev
+
+
+
+Nodemon
+=====
+1. Use to avoid restart the server every time we updated the code.
