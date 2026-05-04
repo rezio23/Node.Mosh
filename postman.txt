@@ -1,0 +1,46 @@
+** Calling Express Endpoints with Postman **
+
+Before testing, start the Express server and confirm the terminal shows:
+Listening on port 3000
+
+Base URL:
+http://localhost:3000
+
+* GET Request *
+Use GET when you want to read data from the server.
+
+Postman:
+New HTTP Request -> GET -> http://localhost:3000/api/courses/1 -> Send
+
+Expected result:
+- 200 OK with the course object if the ID exists
+- 404 Not Found if the course ID does not exist
+
+* POST Request *
+Use POST when you want to create a new resource.
+
+Postman:
+New HTTP Request -> POST -> http://localhost:3000/api/courses
+
+Body:
+Body -> raw -> JSON
+
+Example JSON:
+{
+  "name": "React"
+}
+
+Click Send.
+
+Expected result:
+- 200 OK with the new course object
+
+Important Express setup:
+app.use(express.json());
+
+This middleware allows Express to read JSON data from req.body.
+
+* Common HTTP Response Status Codes *
+2xx  Success        200 OK, 201 Created, 204 No Content
+4xx  Client error   400 Bad Request, 401 Unauthorized, 404 Not Found
+5xx  Server error   500 Internal Server Error
